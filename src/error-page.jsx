@@ -9,7 +9,7 @@ export default function ErrorPage() {
       <h1>Ocorreu um erro</h1>
       <p>Desculpe, mas acabou ocorrendo um erro.</p>
       <p>
-        <i>{error.statusText || error.message}</i>
+        Erro: <i>{error.statusText || error.message}</i>
       </p>
     </div>
   );

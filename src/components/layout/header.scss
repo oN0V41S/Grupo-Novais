@@ -1,0 +1,22 @@
+/* Cabeçalho da Página */
+header{
+  width: 90%;
+  height: max-content;
+  background-color: black;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  min-height: 5vh;
+  color: white;
+  margin: 0 auto;
+  padding: 10px 5% 10px 5%;
+  display: flex;
+  align-items: center;
+
+  /* Título do Cabeçalho */
+  h1{
+    width: max-content;
+    height: max-content;
+    font-size: 18px;
+    font-weight: 300;
+  }
+}
