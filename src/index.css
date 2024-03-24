@@ -1,0 +1,13 @@
+/* Importando estilos CSS das páginas */
+@import url("./pages/home.css");
+@import url("./pages/login.css");
+
+/* Estilo do container da Aplicação */
+#root{
+  font-family: Arial;
+}
+
+/* Media Querys para tema claro do dispositivo */
+@media (prefers-color-scheme: light) {
+  
+}
