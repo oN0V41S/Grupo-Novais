@@ -5,10 +5,9 @@ export default function RegisterProduct(){
     <main class="registerProduct">
     <h1>Registre um Produto</h1>
     <form>
-      <input name="name" placeholder="Nome do Produto"/>
-      <input name="price" placeholder="Preço"/>
-      <input name="imgLink" placeholder="Link da imagem"/>
-      
+      <input name="name" type="text" placeholder="Nome do Produto"/>
+      <input name="price" type="number" placeholder="Preço"/>
+      <input name="imgLink" type="text" placeholder="Link da imagem"/>
     </form>
     </main>
   )
