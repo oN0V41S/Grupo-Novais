@@ -11,6 +11,7 @@ import {
 // Importando Páginas localizadas na pasta ./pages
 import Home from '@pages/home/home';
 import Login from '@pages/login/login';
+import RegisterProduct from '@pages/registerProduct/registerProduct'
 
 // Importando página de Erro
 import ErrorPage from '@/error-page';
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
   {
     path: "/login",
     element: <Login/>,
+  },
+  {
+    path: "/register/registerproduct",
+    element: <RegisterProduct/>,
   },
 ]);
 
