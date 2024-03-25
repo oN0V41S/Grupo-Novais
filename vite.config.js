@@ -17,7 +17,7 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'), // Mapeia @ para a pasta src
       '@pages': path.resolve(__dirname, './src/pages'), // Mapeia ~components para src/components
       '@layout': path.resolve(__dirname, './src/components/layout'), // Mapeia ~components para src/components
-      '~components': path.resolve(__dirname, './src/components'), // Mapeia ~components para src/components
+      '@components': path.resolve(__dirname, './src/components'), // Mapeia ~components para src/components
     }
   }
 })

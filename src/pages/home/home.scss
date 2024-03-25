@@ -1,6 +1,13 @@
-h3{
-  width: max-content;
-  height: max-content;
-  margin: 0 auto;
-  color:blue;
+.recentlyAdded{
+  width: 80%;
+  display:grid;
+  margin: 4vh auto 0;
+  
+  h1{
+    color: white;
+    font-size: 18px;
+    width: max-content;
+    height: max-content;
+    margin-left: 10px;
+  }
 }
