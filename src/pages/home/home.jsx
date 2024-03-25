@@ -25,7 +25,7 @@ function App() {
       </div>
       <h2 className='titleHome'>Promoção</h2>
       <div className="promo productCarousel">
-        <CardProduct name="Yeezy 300" preco="150" />
+        <CardProduct name="Yeezy 300" preco="150" img="https://photos.app.goo.gl/HBghjh5ZRfNVhwE3A"/>
         <CardProduct name="Yeezy 300" preco="150" />
       </div>
     </>
