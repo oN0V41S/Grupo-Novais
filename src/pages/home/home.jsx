@@ -3,9 +3,6 @@ import Header from '@layout/header'
 import CardProduct from '@components/cardProduct/cardProduct'
 import LoadingCard from '@components/cardProduct/loadingCard'
 
-/* Importando Carrosel */ 
-import '@splidejs/react-splide/css/skyblue';
-
 function App() {  
   return (
     <>
