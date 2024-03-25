@@ -1,9 +1,13 @@
-export default function CardProduct({props}){
+export default function CardProduct({nome, img, preco, link}){
   return (
-    <div className="cardProduct">
-      <img src={props.imagem}/>
-      <h1>{props.nome}</h1>
-      <p>{props.preco}</p>
-    </div>
+    <a className="cardProduct" href={link}>
+      <img src={img} alt="nome"/>
+      <div>
+        <h1>{nome}</h1>
+        <h2>R${preco}</h2>
+      </div>
+      <p>Estoque:</p>
+      <p>clique para mais informações</p>
+    </a>
   )
 }

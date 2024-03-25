@@ -1,13 +1,18 @@
-.recentlyAdded{
-  width: 80%;
-  display:grid;
-  margin: 4vh auto 0;
-  
-  h1{
-    color: white;
-    font-size: 18px;
-    width: max-content;
-    height: max-content;
-    margin-left: 10px;
-  }
+/* Títulos da Página */
+.titleHome{
+  color: white;
+  font-size: 18px;
+  width: max-content;
+  height: max-content;
+  margin: 5vh auto 1vh 8vw;
 }
+
+.recentlyAdded{
+  width: 95%;
+  height: 65vh;
+  margin: 2vh 3vw 4vw;
+  display: flex;
+  flex-warp: no-wrap;
+  overflow: hidden;
+}
+
