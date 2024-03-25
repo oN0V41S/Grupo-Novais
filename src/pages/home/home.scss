@@ -1,18 +1,17 @@
 /* Títulos da Página */
 .titleHome{
   color: white;
-  font-size: 18px;
+  font-size: 24px;
   width: max-content;
   height: max-content;
-  margin: 5vh auto 1vh 8vw;
+  margin: 5vh auto 1vh 6vw; 
 }
 
-.recentlyAdded{
-  width: 95%;
-  height: 65vh;
-  margin: 2vh 3vw 4vw;
+.productCarousel{
+  width: 80%;
   display: flex;
-  flex-warp: no-wrap;
+  gap: 5vw;
+  color: white;
+  margin: 0 auto;
   overflow: hidden;
 }
-

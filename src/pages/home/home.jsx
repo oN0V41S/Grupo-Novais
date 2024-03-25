@@ -11,7 +11,7 @@ function App() {
     <>
       <Header/>
       <h1 className='titleHome'>Recentemente Adicionados</h1>
-      <div className="recentlyAdded">
+      <div className="recentlyAdded productCarousel">
         <CardProduct 
           nome="Yeezy 300" 
           preco="150" 
@@ -22,6 +22,11 @@ function App() {
           preco="150" 
           link="https://www.cssbuy.com/item-micro-6255884078.html?promotionCode=" 
           img="https://si.geilicdn.com/wdseller1425026222-4a120000018df1188aec0a22d30e_1080_1080.jpg"/>
+      </div>
+      <h2 className='titleHome'>Promoção</h2>
+      <div className="promo productCarousel">
+        <CardProduct name="Yeezy 300" preco="150" />
+        <CardProduct name="Yeezy 300" preco="150" />
       </div>
     </>
   )

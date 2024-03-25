@@ -1,20 +1,21 @@
 .cardProduct{
   background-color: white;
   box-shadow: 2px 1px 5px white;
-  width: 52vw;
+  width: 420px;
   height: max-content;
   border-radius: 8px;
-  margin-top: 4vh;
+  margin: 0 2vw 2vh 3vw;
   overflow: hidden;
-  display:grid;
+  display:flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: absolute;
   float: left;
   color: black;
   text-decoration: none;
   transition: all ease-in-out 200ms;
 
+  /* Estado de Foco e arrastar */
   &:hover, &:focus{
     animation: up 2s ease-in-out;
 
@@ -30,11 +31,13 @@
       }
     }
   }
-  
+
+  /* Imagem do produto */
   img{
     width: 100%;
     border-radius: 5px
   }
+  /* Conteiner de nome e preço */ 
   div{
     display: flex;
     width: 75%;
@@ -49,6 +52,7 @@
       font-size: 18px;
     }
   }
+  /* Parágrafo */
   p{
     width: 90%;
     font-weight: 600;
