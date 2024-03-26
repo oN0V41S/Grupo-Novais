@@ -1,7 +1,7 @@
 .cardProduct{
   background-color: white;
   box-shadow: 2px 1px 5px white;
-  width: 420px;
+  width: 440px;
   height: max-content;
   border-radius: 8px;
   margin: 0 2vw 2vh 3vw;
@@ -37,6 +37,7 @@
     width: 100%;
     border-radius: 5px
   }
+  
   /* Conteiner de nome e preço */ 
   div{
     display: flex;
@@ -49,12 +50,13 @@
     margin: 2vh auto;
 
     h1,h2{
-      font-size: 18px;
+      font-size: 14px;
     }
   }
   /* Parágrafo */
   p{
     width: 90%;
+    font-size: 12px;
     font-weight: 600;
     margin: 2vh auto;
     text-align: center;

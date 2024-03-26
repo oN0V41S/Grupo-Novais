@@ -1,4 +1,7 @@
-import Header from '@layout/header'
+/* Importando Estilos */
+import '@pages/home/home.scss'
+/* Importando Componentes */
+import Header from '@layout/header/header'
 
 import CardProduct from '@components/cardProduct/cardProduct'
 import LoadingCard from '@components/cardProduct/loadingCard'

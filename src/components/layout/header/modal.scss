@@ -1,0 +1,116 @@
+/* Conteúdo do Modal */
+.ReactModal__Content{
+  width: 80%;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+
+  /* Botão para fechar*/
+  .btnCloseModal{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 30px;
+    background-color: #fff;
+    transition: all 3s ease-in-out;
+    border: none;
+    border-radius: 8px;
+    gap: 5px;
+
+  }
+
+  /* Título e botão para fechar Modal */
+  .modalTitle{
+    margin: 0 auto 2.5vh;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    button{
+      font-size: 24px;
+      font-weight: 900;
+    }
+  }
+
+  /* Botão de Categorias */
+  .dropdownCategorias{
+    background-color: white;
+    border: none;
+    font-weight: 800;
+    font-size: 28px;
+    margin: 1vh auto 2vh auto;
+    padding: 10px 50px 10px 30px;
+    box-shadow: 0px 0px 50px 2px rgba(0,0,0,0.4);
+    border-radius: 5px;
+    text-align: left;
+    width: 95%;
+    padding-top: 20px;
+    transition: all 1s ease-in-out infinte;
+
+    &:focus{
+      .dropdownContent{
+        opacity: 1;
+        display:flex;
+      }
+    }
+    
+    h1{
+      height: max-content;
+      width: 100%;
+      font-size: 18px;
+      border-bottom: 1px solid black;
+      padding-bottom: 5px;
+    }
+
+    /* Conteúdo do Dropdown */
+    .dropdownContent{
+      font-weight: 900;
+      margin: 3vh auto 2vh auto;
+      flex-direction: column;
+      box-shadow: 0px 0px 50px 2px rgba(0,0,0,0.4);
+      padding: 20px 15px 25px;
+      border-radius: 8px;
+      display:none;
+      width: 95%;
+
+      /* título */
+      h1{
+        width: max-content;
+        margin-right: auto;
+        font-size: 20px;
+      }
+
+      /* Lista de Itens */
+      .dropdownList{
+        width: 100%;
+        padding: 0.2vh 1vw;
+        list-style: none;
+        text-align: left;
+        dsplay:flex;
+        flex-direction: column;
+        justify-content: left;
+        gap: 5px;
+        margin: 5px 0 10px 2vw;
+
+        h1{
+          width: 90%;
+          text-align: left;
+          margin: 1vh auto 0 0.1vw;
+          font-size: 18px;
+          border-bottom: 1px solid black
+        }
+      }
+    }
+  }
+
+  /* links */
+  a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+  }
+}
