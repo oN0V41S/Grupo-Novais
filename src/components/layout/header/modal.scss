@@ -4,6 +4,7 @@
   border-radius: 20px;
   display: flex;
   flex-direction: column;
+  padding: 8vh 1v 4vhw;
 
   /* Botão para fechar*/
   .btnCloseModal{
@@ -41,6 +42,7 @@
     }
   }
 
+  /* Seção do Modal */
   .sectionModal{
     background-color: white;
     border: none;

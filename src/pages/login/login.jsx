@@ -4,7 +4,12 @@ function Login(){
   return(
     <>
       <Header/>
-    Tela Login 
+      <section>
+        <form>
+          <input name="user" type="text" placeholder="Email"/>
+          <input name="password" type="text" placeholder="Senha"/>
+        </form>
+      </section>
     </>
   )
 }
