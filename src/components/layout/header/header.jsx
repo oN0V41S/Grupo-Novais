@@ -2,14 +2,17 @@
 import '@layout/header/header.scss'
 import '@layout/header/modal.scss'
 
-/* Importando Imagens */
-import logo from '@assets/fitLogo.png'
+/* Importando Assets */
+import Logo from '@assets/logo.png'
+import HomeIcon from '@assets/homeIcon.png'
 
 /* Importando Hook de estado */
 import { useState } from 'react'
 
-/* Importando modal */
+/* Importando Componentes */
 import Modal from "react-modal";
+import { Link } from "react-router-dom";
+
 
 export default function Header(){
   /* Iniciando Estados do Modal */
@@ -51,7 +54,9 @@ export default function Header(){
   return(
     <header>
       <div>
-        <img src={logo}/>
+        <Link to="/">
+          <img src={Logo} alt="Logo"/>
+        </Link>
         <h1>FB Outfit</h1>
       </div>
         <button className="btnModal" onClick={openModal}>
@@ -67,7 +72,7 @@ export default function Header(){
           contentLabel="Categorias"
         >
           <div className="modalTitle">
-            <h1>Menu</h1>
+            <img src={HomeIcon} alt="HomeIcon"/>
             <button className="btnCloseModal" onClick={closeModal}>
               X
             </button>
@@ -83,7 +88,7 @@ export default function Header(){
                   <h1>Chinelos</h1>
                 </div>
             </div>
-              <div id="dropdownItem" className="dropdownContent">
+              <div id="dropdownItem" className="dropdownContent sectionModal">
                 <h1>Adidas</h1>
                 <div className="dropdownList">
                   <h1>Conjuntos</h1>
@@ -93,8 +98,17 @@ export default function Header(){
                 </div>
               </div>
             </button>
-          <a href="#">Sobre</a>
-          <a href="#">Login</a>
+          <div>
+          </div>
+          <Link onClick={closeModal} className="sectionModal" to="/sobre">
+            <h1>Sobre</h1>
+          </Link>
+          <Link onClick={closeModal} className="sectionModal" to="/duvidas">           
+            <h1>Dúvidas</h1>
+          </Link>
+          <Link onClick={closeModal} className="sectionModal" to="/login">            
+            <h1>Login</h1>
+          </Link>
         </Modal>
     </header>
   )
