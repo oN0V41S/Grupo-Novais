@@ -100,14 +100,14 @@ export default function Header(){
             </button>
           <div>
           </div>
-          <Link onClick={closeModal} className="sectionModal" to="/sobre">
-            <h1>Sobre</h1>
-          </Link>
           <Link onClick={closeModal} className="sectionModal" to="/duvidas">           
             <h1>Dúvidas</h1>
           </Link>
           <Link onClick={closeModal} className="sectionModal" to="/login">            
             <h1>Login</h1>
+          </Link>
+          <Link onClick={closeModal} className="sectionModal" to="/sobre">
+            <h1>Sobre</h1>
           </Link>
         </Modal>
     </header>
