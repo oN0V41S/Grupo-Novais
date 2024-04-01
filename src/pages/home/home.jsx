@@ -7,22 +7,23 @@ import CardProduct from '@components/cardProduct/cardProduct'
 import LoadingCard from '@components/cardProduct/loadingCard'
 
 function App() {  
+  const data = [];
+  
   return (
     <>
       <Header/>
       <h1 className='titleHome'>Recentemente Adicionados</h1>
-      <div className="recentlyAdded productCarousel">
-        <CardProduct 
-          nome="Yeezy 300" 
-          preco="150" 
-          link="https://www.cssbuy.com/item-micro-6255884078.html?promotionCode=" 
-          img="https://si.geilicdn.com/wdseller1425026222-4a120000018df1188aec0a22d30e_1080_1080.jpg"/>
-        <CardProduct 
-          nome="Yeezy 300" 
-          preco="150" 
-          link="https://www.cssbuy.com/item-micro-6255884078.html?promotionCode=" 
-          img="https://si.geilicdn.com/wdseller1425026222-4a120000018df1188aec0a22d30e_1080_1080.jpg"/>
-      </div>
+      {/*
+      <RecentementeAdicionados>
+        
+        {data.map(produto => {
+       return(
+         <CardProduct nome={produto.nome} img={produto.img} preco={produto.preco} link={produto.link} />
+       )
+        })}
+      
+      </RecentementeAdicionados>
+      */}
       <h2 className='titleHome'>Promoção</h2>
       <div className="promo productCarousel">
         <CardProduct name="Yeezy 300" preco="150" img="https://photos.app.goo.gl/HBghjh5ZRfNVhwE3A"/>
@@ -33,3 +34,18 @@ function App() {
 }
 
 export default App
+
+import React from 'react';
+// import { Splide, SplideSlide } from 'react-splide';
+// import 'react-splide/dist/css/themes/splide-default.min.css';
+
+/* const RecentementeAdicionados = ({children}) => {
+  return (
+    <Splide >
+      <SplideSlide>
+        {children}
+      </SplideSlide>
+    </Splide>
+  );
+}
+*/

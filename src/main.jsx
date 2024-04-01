@@ -13,7 +13,8 @@ import Home from '@pages/home/home';
 import Login from '@pages/login/login';
 import Duvidas from '@pages/duvidas/duvidas';
 import Sobre from '@pages/sobre/sobre';
-import RegisterProduct from '@pages/registerProduct/registerProduct';
+import RegisterProduct from '@pages/register/registerProduct/registerProduct';
+import RegisterClient from '@pages/register/registerClient/registerClient';
 
 // Importando página de Erro
 import ErrorPage from '@/error-page';
@@ -42,6 +43,10 @@ const router = createBrowserRouter([
   {
     path: "/register/registerproduct",
     element: <RegisterProduct/>,
+  },
+    {
+    path: "/register/registerclient",
+    element: <RegisterClient/>,
   },
 ]);
 
