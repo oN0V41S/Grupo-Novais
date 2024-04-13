@@ -1,0 +1,24 @@
+/* Lista de Dúvidas */
+.questionsList{
+  width: 75%;
+  margin: 2vh auto 5vh auto;
+  padding: 2vh 5% 4vh 5%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 0px 0px 50px 2px rgba(0,0,0,0.4);
+  colo: black;
+  border-radius: 8px;
+}
+
+/* Componente de Questão */
+.questionCard{
+  padding: 2vh 6% 3vh 6%;
+  border-radius: 8px;
+  width: 81%;
+  display:flex;
+  flex-direction: column;
+  gap: 2vh;
+  box-shadow: 0px 0px 50px 2px rgba(0,0,0,0.4);
+  margin: 2vh auto 3vh auto;
+}

@@ -1,0 +1,67 @@
+.login{
+  width: 80%;
+  padding: 2vh 5% 3vh 5%;
+  color: black;
+  background-color: white;
+  border-radius: 5px;
+  margin: 2vh auto;
+
+  h1{
+    width: 90%;
+    margin: 2vh auto 3vh;
+    font-size: 20px;
+    border-bottom: solid 2px black;
+    padding-bottom: 2vh;
+  }
+
+  form{
+    display:flex;
+    flex-direction: column;
+    gap: 2vh;
+    margin: 0 auto;
+    
+    input{
+      width: 80%;
+      margin: 1vh auto;
+      border:none;
+      background-color: black;
+      transition: all 500ms ease-in-out;
+      border-radius: 8px;
+      padding: 3vh 3vw;
+
+      &:focus{
+        outline: none;
+        transform: translateY(1vh);
+      }
+    }
+
+    button{
+      width: 50%;
+      margin: 1.5vh auto;
+      padding: 2vh 2vw;
+      border: none;
+      border-radius: 7px;
+      background-color: white;
+      box-shadow: 1px -2px 10px 0px black;
+      font-weight: 800;
+    }
+  }
+
+  .infoLogin{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 2vh;
+    font-weight: 500;
+
+    a{
+      color: black;
+      text-decoration: none;
+    }
+
+    .remeberMe{
+      display:flex;
+      gap: 0.7vh;
+    }
+  }
+}
