@@ -1,15 +1,14 @@
 // Importando pacotes
-const express = require('express')
-const mongoose = require('mongoose')
-
-// Importando Modelos
-const Product = require('./src/model/product.js')
+const express = require("express");
 
 // Importando Funções de controle de Requisição
-const getProduct = require('./src/controller/getProduct.js')
-const postProduct = require('./src/controller/postProduct.js')
-const deleteProduct = require('./src/controller/deleteProduct.js')
-const putProduct = require('./src/controller/putProduct.js')
+const getProduct = require("./src/controller/getProduct.js");
+const postProduct = require("./src/controller/postProduct.js");
+const deleteProduct = require("./src/controller/deleteProduct.js");
+const putProduct = require("./src/controller/putProduct.js");
+
+// Importando aplicação
+const App = require("./src/app.js");
 
 // Iniciando Variável da Aplicação
 const app = express();
@@ -19,22 +18,16 @@ app.use(express.json());
 const port = 3001;
 
 // Tratamento de requisição GET
-app.get('/', getProduct)
+app.get("/", getProduct);
 
 // Tratamento de requisição POST
-app.post('/', postProduct)
+app.post("/", postProduct);
 
 // Tratamento de requisição DELETE
-app.delete('/:id', deleteProduct)
+app.delete("/:id", deleteProduct);
 
 // Tratamento de requisição PUT
-app.put('/:id',putProduct)
+app.put("/:id", putProduct);
 
-// Executa aplicação na porta iniciada
-
-app.listen(port, ()=>{
-    // String de Conexão com Banco
-    mongoose.connect('mongodb+srv://rafaelaugustonnovais:7KrTy3jABMVnNmOE@free-cluster.xkizxqe.mongodb.net/')
-    }
-)
-
+// Executa aplicação
+app.listen(port, App);

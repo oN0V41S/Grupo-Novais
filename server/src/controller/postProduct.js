@@ -11,8 +11,8 @@ async function postProduct(req,res){
     images:    req.body.images
   }) 
 
-  await film.save();
-  return res.send(film);
+  await product.save();
+  return res.send(product);
 }
 
 module.exports = postProduct;
