@@ -4,8 +4,6 @@ const login = AUTH.login;
 const password = AUTH.password;
 const db = AUTH.db;
 
-console.log(login, password, db);
-
 // Importando pacotes
 const mongoose = require("mongoose");
 
