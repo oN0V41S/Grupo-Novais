@@ -11,16 +11,22 @@ async function getProduct(req, res) {
 // Tratamento de requisição POST
 async function postProduct(req, res) {
   console.log("Realizando POST...");
-  // Iniciando um objeto do Tipo Filme para inserir no banco
+  // Verificando se o corpo da requisição está presente
+  if (!req.body) {
+    return res.status(400).send({ error: "Corpo da requisição vazio ou inválido." });
+    console.log("Corpo da requisição vazio ou inválido..");
+  }
+  // Pegando dados da requisição
+  const { name, price, link_buy, images } = JSON.req.body;
+  // Produto a ser inserido no banco
   const product = new Product({
-    name: req.body.name,
-    price: req.body.price,
-    link_buy: req.body.link_buy,
-    images: req.body.images,
+    name,
+    price,
+    link_buy,
+    images,
   });
-
   await product.save();
-  return res.send(product);
+  return res.send(req);
 }
 
 // Tratamento de requisição PUT

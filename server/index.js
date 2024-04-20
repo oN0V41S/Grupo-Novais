@@ -4,18 +4,18 @@ const express = require("express");
 // Iniciando Variável da Aplicação
 const app = express();
 
-// Importando aplicação
-const App = require("./src/app.js");
+// Rota Principal
+app.get("/", (req, res) => {
+  return res.send("Bem Vindo a API...");
+});
 
-// Importando Rotas de Produtos
-const productRoutes = require('./src/routes/productRoutes.js')
-const userRoutes = require('./src/routes/userRoutes.js')
+// Definindo Rotas
+app.use("/products", require("./src/routes/productRoutes.js"));
+app.use("/users", require("./src/routes/userRoutes.js"));
 
-app.use('/product', productRoutes)
-app.use('/user', userRoutes)
-
-// Porta da aplicação
+// Configurando Aplicação
 const port = 3001;
+const index = require("./src/index.js");
 
 // Executa aplicação
-app.listen(port, App);
+app.listen(port, index);

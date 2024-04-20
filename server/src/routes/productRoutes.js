@@ -2,18 +2,15 @@
 const Router = require("express");
 
 // Iniciando Roteador
-const router = Router()
+const routerProduct = Router();
 
 // Importando funções
-const getProduct = require("../controller/productController.js");
-const postProduct = require("../controller/productController.js");
-const deleteProduct = require("../controller/productController.js");
-const putProduct = require("../controller/productController.js");
+const [ getProduct, postProduct, deleteProduct, putProduct ] = require("../controller/productController.js");
 
 // Tratamento de requisições
-router.get("/", getProduct);
-router.post("/", postProduct);
-router.delete("/:id", deleteProduct);
-router.put("/:id", putProduct);
+routerProduct.get("/", getProduct);
+routerProduct.post("/", postProduct);
+routerProduct.delete("/:id", deleteProduct);
+routerProduct.put("/:id", putProduct);
 
-module.exports = router
+module.exports = routerProduct;

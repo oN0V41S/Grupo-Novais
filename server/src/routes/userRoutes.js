@@ -2,13 +2,15 @@
 const Router = require("express");
 
 // Iniciando Roteador
-const router = Router()
+const router = Router();
 
 // Importando Controladores
-const getUsers = require("../controller/userController.js");
-const postUser = require("../controller/userController.js");
-const deleteUser = require("../controller/userController.js");
-const putUser = require("../controller/userController.js");
+const [
+  getUsers,
+  postUser,
+  deleteUser,
+  putUser,
+] = require("../controller/userController.js");
 
 router.get("/", getUsers);
 router.post("/", postUser);
