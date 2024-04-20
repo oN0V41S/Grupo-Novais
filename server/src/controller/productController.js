@@ -17,7 +17,7 @@ async function postProduct(req, res) {
     console.log("Corpo da requisição vazio ou inválido..");
   }
   // Pegando dados da requisição
-  const { name, price, link_buy, images } = JSON.req.body;
+  const { name, price, link_buy, images } = req.body;
   // Produto a ser inserido no banco
   const product = new Product({
     name,
@@ -26,7 +26,7 @@ async function postProduct(req, res) {
     images,
   });
   await product.save();
-  return res.send(req);
+  return res.send(product);
 }
 
 // Tratamento de requisição PUT
