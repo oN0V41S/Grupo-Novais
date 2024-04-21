@@ -1,12 +1,6 @@
 // Importando suporte a conf de var de ambiente com ".env"
 require('dotenv').config();
 
-// Importando Credênciais de ambiente;
-const login = process.env.MDBLOGIN;
-const password = process.env.MDBPASSWORD;
-const mongodb = process.env.MDB;
-const cluster = process.env.DBCLUSTER;
-
 // Importando pacotes
 const mongoose = require("mongoose");
 
