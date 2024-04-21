@@ -12,12 +12,6 @@ app.get("/", (req, res) => {
   return res.send("Bem Vindo a API...");
 });
 
-// Importando Middleware de requisições
-const bodyParser = require("express-json");
-
-// Adicionando na aplicação o middleware
-app.use(bodyParser());
-
 // Definindo Rotas
 app.use("/products", require("./routes/productRoutes.js"));
 app.use("/users", require("./routes/userRoutes.js"));
