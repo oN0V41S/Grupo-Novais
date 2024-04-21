@@ -1,16 +1,30 @@
-// Importando Credênciais de ambiente
-const AUTH = require("../authenticate.js");
-const login = AUTH.login;
-const password = AUTH.password;
-const db = AUTH.db;
-
 // Importando pacotes
-const mongoose = require("mongoose");
+const express = require("express");
 
-function App() {
-  // String de Conexão com Banco
-  mongoose.connect(`mongodb+srv://${login}:${password}@${db}/`);
-  console.log("Executando API na porta 3001");
-}
+// Iniciando Variável da Aplicação
+const app = express();
 
-module.exports = App;
+// Formatando resposta para JSON
+app.use(express.json());
+
+// Rota Principal
+app.get("/", (req, res) => {
+  return res.send("Bem Vindo a API...");
+});
+
+// Importando Middleware de requisições
+const bodyParser = require("express-json");
+
+// Adicionando na aplicação o middleware
+app.use(bodyParser());
+
+// Definindo Rotas
+app.use("/products", require("./routes/productRoutes.js"));
+app.use("/users", require("./routes/userRoutes.js"));
+
+// Configurando Aplicação
+const port = 3001;
+const index = require("./app.js");
+
+// Executa aplicação
+app.listen(port, index);

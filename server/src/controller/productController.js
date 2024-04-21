@@ -16,7 +16,7 @@ async function postProduct(req, res) {
     return res.status(400).send({ error: "Corpo da requisição vazio ou inválido." });
     console.log("Corpo da requisição vazio ou inválido..");
   }
-  // Pegando dados da requisição
+
   const { name, price, link_buy, images } = req.body;
   // Produto a ser inserido no banco
   const product = new Product({
