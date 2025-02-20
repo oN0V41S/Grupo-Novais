@@ -19,7 +19,7 @@ export default defineConfig({
       "@pages": path.resolve(__dirname, "./src/pages"), // Mapeia @pages para src/pages
       "@components": path.resolve(__dirname, "./src/components"), // Mapeia @components para src/components
       "@layout": path.resolve(__dirname, "./src/components/layout"), // Mapeia @layout para src/components/layout
-      "@assets": path.resolve(__dirname, "./src/assets"), // Mapeia @assets para src/assets
+      "@public": path.resolve(__dirname, "./public"), // Mapeia @assets para src/assets
     },
   },
 });

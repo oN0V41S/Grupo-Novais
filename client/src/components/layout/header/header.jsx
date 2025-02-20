@@ -3,7 +3,7 @@
 // import "@layout/header/modal.scss";
 
 /* Importando Assets */
-import Logo from "@assets/logo.png";
+import Logo from "@public/logo.png";
 import HomeIcon from "@assets/homeIcon.png";
 
 /* Importando Hooks */

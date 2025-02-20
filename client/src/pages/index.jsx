@@ -1,18 +1,18 @@
 /* Importando Estilos */
-import '@pages/home/home.scss'
+// import "@pages/home/home.scss";
 /* Importando Componentes */
-import Header from '@layout/header/header'
+import Header from "@layout/header/header.jsx";
 
-import CardProduct from '@components/cardProduct/cardProduct'
-import LoadingCard from '@components/cardProduct/loadingCard'
+import CardProduct from "@components/cardProduct/cardProduct";
+import LoadingCard from "@components/cardProduct/loadingCard";
 
-function App() {  
+function App() {
   const data = [];
-  
+
   return (
     <>
-      <Header/>
-      <h1 className='titleHome'>Recentemente Adicionados</h1>
+      <Header />
+      <h1 className="titleHome">Recentemente Adicionados</h1>
       {/*
       <RecentementeAdicionados>
         
@@ -24,18 +24,22 @@ function App() {
       
       </RecentementeAdicionados>
       */}
-      <h2 className='titleHome'>Promoção</h2>
+      <h2 className="titleHome">Promoção</h2>
       <div className="promo productCarousel">
-        <CardProduct name="Yeezy 300" preco="150" img="https://photos.app.goo.gl/HBghjh5ZRfNVhwE3A"/>
+        <CardProduct
+          name="Yeezy 300"
+          preco="150"
+          img="https://photos.app.goo.gl/HBghjh5ZRfNVhwE3A"
+        />
         <CardProduct name="Yeezy 300" preco="150" />
       </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
 
-import React from 'react';
+import React from "react";
 // import { Splide, SplideSlide } from 'react-splide';
 // import 'react-splide/dist/css/themes/splide-default.min.css';
 
