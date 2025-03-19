@@ -1,19 +1,20 @@
 {
   "pages": {
+    "/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/layout.css",
+      "static/chunks/app/layout.js"
+    ],
     "/page": [
-      "static/chunks/ad310_next_dist_4cde502d._.js",
-      "static/chunks/src_app_favicon_ico_mjs_7e004f0d._.js",
-      "static/chunks/[next]_internal_font_google_3ce7c0dc._.css",
-      "static/chunks/src_app_layout_tsx_29f0da54._.js",
-      "static/chunks/ad310_next_dist_4d38b915._.js",
-      "static/chunks/src_app_page_tsx_b8693b01._.js",
-      "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_d8812fde._.js",
-      "static/chunks/ad310_next_dist_compiled_8390884e._.js",
-      "static/chunks/ad310_next_dist_client_3d7b8157._.js",
-      "static/chunks/ad310_next_dist_5d1f8663._.js",
-      "static/chunks/61dca_@swc_helpers_cjs_e27e0aca._.js",
-      "static/chunks/_e69f0d32._.js",
-      "static/chunks/_751bd5e8._.js"
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/page.js"
+    ],
+    "/_not-found/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/_not-found/page.js"
     ]
   }
 }

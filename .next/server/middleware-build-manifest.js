@@ -1,1 +1,33 @@
-globalThis.__BUILD_MANIFEST={"pages":{"/_app":["static/chunks/[root of the server]__f674bb63._.js","static/chunks/545c3_react-dom_1c85ba3a._.js","static/chunks/node_modules__pnpm_f84813a4._.js","static/chunks/[root of the server]__f5f356b3._.js","static/chunks/src_pages__app_5771e187._.js","static/chunks/src_pages__app_53d57210._.js"],"/_error":["static/chunks/[root of the server]__3f9d6c7e._.js","static/chunks/545c3_react-dom_1c85ba3a._.js","static/chunks/node_modules__pnpm_f84813a4._.js","static/chunks/[root of the server]__ca38f087._.js","static/chunks/src_pages__error_5771e187._.js","static/chunks/src_pages__error_2b8c18d6._.js"]},"devFiles":[],"ampDevFiles":[],"polyfillFiles":["static/chunks/ad310_next_dist_build_polyfills_polyfill-nomodule.js"],"lowPriorityFiles":["static/development/_ssgManifest.js","static/development/_buildManifest.js"],"rootMainFiles":["static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_d8812fde._.js","static/chunks/ad310_next_dist_compiled_8390884e._.js","static/chunks/ad310_next_dist_client_3d7b8157._.js","static/chunks/ad310_next_dist_5d1f8663._.js","static/chunks/61dca_@swc_helpers_cjs_e27e0aca._.js","static/chunks/_e69f0d32._.js","static/chunks/_751bd5e8._.js"],"ampFirstPages":[]};
+globalThis.__BUILD_MANIFEST = {
+  "polyfillFiles": [
+    "static/chunks/polyfills.js"
+  ],
+  "devFiles": [
+    "static/chunks/react-refresh.js"
+  ],
+  "ampDevFiles": [],
+  "lowPriorityFiles": [],
+  "rootMainFiles": [
+    "static/chunks/webpack.js",
+    "static/chunks/main-app.js"
+  ],
+  "rootMainFilesTree": {},
+  "pages": {
+    "/_app": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/_app.js"
+    ],
+    "/_error": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/_error.js"
+    ]
+  },
+  "ampFirstPages": []
+};
+globalThis.__BUILD_MANIFEST.lowPriorityFiles = [
+"/static/" + process.env.__NEXT_BUILD_ID + "/_buildManifest.js",
+,"/static/" + process.env.__NEXT_BUILD_ID + "/_ssgManifest.js",
+
+];
