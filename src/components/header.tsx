@@ -5,7 +5,12 @@ interface HeaderProps {
   navItems: { label: string; href: string }[];
 }
 
-const Header: React.FC<HeaderProps> = ({navItems}) => {
+const Header: React.FC<HeaderProps> = () => {
+  const dataNavItems = [
+    { label:'Home', href: '/'},
+    { label:'Administration', href: '/administration'}
+  ];
+
   return (
     <Navbar classNames={{
       base: "py-2 px-4 bg-black flex w-[90vw] mx-auto mt-2 rounded-lg",
@@ -14,8 +19,8 @@ const Header: React.FC<HeaderProps> = ({navItems}) => {
         <p className="font-bold text-inherit my-auto">Grupo Novais</p>
       </NavbarBrand>
       <NavbarContent className="flex gap-2 gap-4 my-auto" justify="center">
-        {navItems.map((item)=>{return(
-        <NavbarItem>
+        {dataNavItems.map((item)=>{return(
+        <NavbarItem key={item.label}>
         <Link key={item.label} color='foreground' href={item.href}>
           {item.label}
         </Link>
