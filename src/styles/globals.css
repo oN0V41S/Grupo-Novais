@@ -19,8 +19,16 @@
   }
 }
 
+* {
+  color: whitesmoke
+}
+
 body {
-  background: var(--background);
+  background: #171717;;
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+main{
+  width: 90%;
 }

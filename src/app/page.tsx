@@ -1,11 +1,8 @@
-import '@/styles/globals.css'
 import Header from "@/components/header";
 
 export default function Home() {
 
   return (
-    <>
-      <Header navItems={[]}/>
-    </>
+    <div>Here will be a simple home page.</div>
   );
 }

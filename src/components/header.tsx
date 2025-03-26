@@ -1,27 +1,27 @@
 import React from 'react';
-import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button} from "@heroui/react";
+import { Navbar, NavbarBrand, NavbarContent, NavbarItem, } from "@heroui/navbar";
+import { Button } from "@heroui/button";
+import Link from "next/link"
 
-interface HeaderProps {
-  navItems: { label: string; href: string }[];
-}
-
-const Header: React.FC<HeaderProps> = () => {
+const Header: React.FC = () => {
   const dataNavItems = [
-    { label:'Home', href: '/'},
-    { label:'Administration', href: '/administration'}
+    { label:'Products', href: '/products'}
   ];
 
   return (
     <Navbar classNames={{
-      base: "py-2 px-4 bg-black flex w-[90vw] mx-auto mt-2 rounded-lg",
+      base: "py-2 px-4 bg-black flex w-[90vw] mx-auto mt-[4vh] rounded-lg",
     }}>
       <NavbarBrand className="text-sm w-auto h-auto">
-        <p className="font-bold text-inherit my-auto">Grupo Novais</p>
+        <Link 
+          href={'/'} 
+          className='font-bold text-white my-auto' 
+          prefetch={true}>Grupo Novais</Link>
       </NavbarBrand>
       <NavbarContent className="flex gap-2 gap-4 my-auto" justify="center">
         {dataNavItems.map((item)=>{return(
         <NavbarItem key={item.label}>
-        <Link key={item.label} color='foreground' href={item.href}>
+        <Link key={item.label} href={item.href} className='text-wihte' prefetch={true}>
           {item.label}
         </Link>
       </NavbarItem>
